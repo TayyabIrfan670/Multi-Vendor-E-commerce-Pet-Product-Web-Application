@@ -1,0 +1,67 @@
+.filter-sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.filter-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.clear-filters {
+  padding: 0;
+  font-size: 0.9rem;
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+.clear-filters:hover {
+  color: #e67e00;
+  text-decoration: underline;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f1f1f1;
+  color: #333;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.form-check-input:checked {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+.price-range-display {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.apply-filters-btn {
+  width: 100%;
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  font-weight: 500;
+}
+
+.apply-filters-btn:hover {
+  background-color: #e67e00;
+  border-color: #e67e00;
+} 

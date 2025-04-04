@@ -1,0 +1,45 @@
+.payment-page h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.payment-page .card {
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.payment-page .card-body {
+  padding: 25px;
+}
+
+.payment-page h4 {
+  color: #444;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.payment-page .order-summary {
+  color: #555;
+}
+
+.payment-page .total-amount {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.cod-payment {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.cod-payment h4 {
+  margin-bottom: 15px;
+}
+
+.cod-payment p {
+  margin-bottom: 20px;
+  color: #555;
+} 

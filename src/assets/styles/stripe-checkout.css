@@ -1,0 +1,40 @@
+.stripe-checkout {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.stripe-checkout h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.payment-amount {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.payment-amount strong {
+  font-size: 18px;
+  color: #0a6efd;
+}
+
+.card-element-container {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.pay-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Loading animation */
+.pay-button .spinner-border {
+  width: 1.25rem;
+  height: 1.25rem;
+} 

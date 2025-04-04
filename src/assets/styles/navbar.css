@@ -1,0 +1,45 @@
+.pet-navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.pet-navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #4a4a4a;
+}
+
+.pet-navbar .nav-link {
+  color: #4a4a4a;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.pet-navbar .nav-link:hover {
+  color: #ff8c00;
+}
+
+.pet-navbar .form-control {
+  border-radius: 20px;
+  min-width: 250px;
+}
+
+.pet-navbar .btn-outline-success {
+  border-radius: 20px;
+  border-color: #ff8c00;
+  color: #ff8c00;
+}
+
+.pet-navbar .btn-outline-success:hover {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: white;
+}
+
+.pet-navbar .badge {
+  position: relative;
+  top: -8px;
+  left: -5px;
+  font-size: 0.6rem;
+} 

@@ -1,0 +1,81 @@
+/* Orange button styles for the Pet Shop E-commerce Application */
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-add-to-cart {
+  background-color: #ff8c00 !important;
+  border-color: #ff8c00 !important;
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-add-to-cart:hover,
+.btn-add-to-cart:focus,
+.btn-add-to-cart:active {
+  background-color: #ffa500 !important;
+  border-color: #ffa500 !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  border-color: #ff8c00 !important;
+  color: #ff8c00 !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: #ff8c00 !important;
+  border-color: #ff8c00 !important;
+  color: white !important;
+}
+
+/* Custom orange button class */
+.btn-orange {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: white;
+}
+
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active {
+  background-color: #ffa500;
+  border-color: #ffa500;
+  color: white;
+}
+
+/* Add to cart button */
+.add-to-cart-btn {
+  background-color: #ff8c00 !important;
+  border-color: #ff8c00 !important;
+}
+
+.add-to-cart-btn:hover,
+.add-to-cart-btn:focus,
+.add-to-cart-btn:active {
+  background-color: #ffa500 !important;
+  border-color: #ffa500 !important;
+}
+
+/* Pagination buttons */
+.pagination .page-item.active .page-link {
+  background-color: #ff8c00 !important;
+  border-color: #ff8c00 !important;
+}
+
+.pagination .page-link {
+  color: #ff8c00;
+}
+
+.pagination .page-link:hover {
+  color: #ffa500;
+} 
