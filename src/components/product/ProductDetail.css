@@ -1,0 +1,148 @@
+.product-detail {
+  padding: 30px 0;
+}
+
+.product-image {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  padding-top: 100%; /* Square aspect ratio container */
+  background-color: #fff;
+}
+
+.product-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* This ensures the image is fully visible */
+  padding: 20px;
+  background-color: #fff;
+}
+
+.badge-new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #ff8c00;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.product-title {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.product-brand, .product-category {
+  font-size: 1rem;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff8c00;
+}
+
+.stock-status {
+  margin-top: 10px;
+}
+
+.product-description {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.product-description h5 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.quantity-select {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.quantity-select select {
+  width: 80px;
+}
+
+.add-to-cart-btn {
+  padding: 10px 25px;
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e67e00;
+  border-color: #e67e00;
+}
+
+.back-link {
+  margin-top: 25px;
+}
+
+.back-link a {
+  color: #555;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+  color: #ff8c00;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.product-star {
+  font-size: 1.3rem;
+  color: #ddd;
+  margin-right: 2px;
+}
+
+.product-star.filled {
+  color: #ff8c00;
+}
+
+.product-rating-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.product-tabs .nav-link {
+  color: #555;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.product-tabs .nav-link.active {
+  color: #ff8c00;
+  font-weight: 600;
+  border-color: #ff8c00;
+} 

@@ -1,0 +1,93 @@
+.seller-reviews-panel {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.seller-reviews-panel h2 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.review-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-thumbnail {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.review-stars {
+  display: flex;
+}
+
+.star {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-right: 2px;
+}
+
+.star.filled {
+  color: #ff8c00;
+}
+
+.rating-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.review-user-info {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.review-comment {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.seller-response {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-left: 3px solid #0d6efd;
+}
+
+.response-text {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.response-date {
+  font-size: 0.8rem;
+  text-align: right;
+} 

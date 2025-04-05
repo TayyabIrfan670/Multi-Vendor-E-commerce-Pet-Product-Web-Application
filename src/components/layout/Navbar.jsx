@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container, Form, FormControl, Button, Badge } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
+import { FaShoppingCart } from 'react-icons/fa';
 import '../../assets/styles/navbar.css';
 
-const MainNavbar: React.FC = () => {
+const MainNavbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const { getItemCount } = useCart();
-  const navigate = useNavigate();
+  const { items, getTotal } = useCart();
   
-  const cartCount = getItemCount();
+  const itemCount = items.reduce((total, item) => total + item.quantity, 0);
 
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
 
-  const handleSearchSubmit = (e: React.FormEvent) => {
+  const handleSearchSubmit = (e) => {
     e.preventDefault();
+    // Redirect to shop page with search query parameter
     if (searchQuery.trim()) {
-      navigate(`/shop?search=${encodeURIComponent(searchQuery.trim())}`);
+      window.location.href = `/shop?search=${encodeURIComponent(searchQuery.trim())}`;
     }
   };
 
@@ -31,8 +32,9 @@ const MainNavbar: React.FC = () => {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/shop">Shop</Nav.Link>
+            <Nav.Link as={Link} to="/vets-portal">Vets Portal</Nav.Link>
+            <Nav.Link as={Link} to="/connect">Connect</Nav.Link>
             <Nav.Link as={Link} to="/register-seller">Register as Seller</Nav.Link>
-            <Nav.Link as={Link} to="/seller-login">Seller Login</Nav.Link>
           </Nav>
           <Form className="d-flex mx-auto" onSubmit={handleSearchSubmit}>
             <FormControl
@@ -52,8 +54,14 @@ const MainNavbar: React.FC = () => {
               Profile
             </Nav.Link>
             <Nav.Link as={Link} to="/cart">
-              Cart {cartCount > 0 && <Badge bg="danger">{cartCount}</Badge>}
+              <FaShoppingCart />
+              {itemCount > 0 && <span className="cart-count">{itemCount}</span>}
             </Nav.Link>
+            {itemCount > 0 && (
+              <div className="cart-total">
+                PKR {getTotal().toLocaleString()}
+              </div>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
