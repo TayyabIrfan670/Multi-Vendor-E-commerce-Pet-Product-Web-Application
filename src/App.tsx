@@ -9,6 +9,7 @@ import Layout from "./components/layout/Layout";
 
 // Pages
 import HomePage from "./components/home/HomePage";
+import ShopPage from "./components/shop/ShopPage";
 import ProductDetail from "./components/product/ProductDetail";
 
 // Seller Pages
